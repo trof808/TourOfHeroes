@@ -13,14 +13,17 @@ import { AppComponent } from './app.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroService } from './hero.service';
+import { HeroSearchService } from './hero-search.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroDetailComponent,
     HeroesComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeroSearchComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
   ],
   providers: [
     HeroService,
-    InMemoryDataService
+    InMemoryDataService,
+    HeroSearchService
   ],
   bootstrap: [AppComponent]
 })
